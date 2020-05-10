@@ -26,7 +26,7 @@ bot.on("ready", () => {
 
 
 bot.on("error", (error) => {
-    bot.login(config.NzA3NjE2NTk1NzM5OTM0ODQx.Xrgvkw.aOzgKRJXUhI3DOCqeS6yTzLRHr4);
+    bot.login(config.NzA3NjE2NTk1NzM5OTM0ODQx.XrgzVQ.Ohguos_jy2xWblzhPxr5j4IJZvI);
 });
 
 process.on('unhandledRejection', error => {
@@ -38,7 +38,7 @@ bot.registry.registerDefaults();
 bot.registry.registerCommandsIn(__dirname + "/commands");
 
 if (process.env.BOT_TOKEN) bot.login(process.env.BOT_TOKEN);
-else bot.login(config.NzA3NjE2NTk1NzM5OTM0ODQx.Xrgvkw.aOzgKRJXUhI3DOCqeS6yTzLRHr4);
+else bot.login(config.NzA3NjE2NTk1NzM5OTM0ODQx.XrgzVQ.Ohguos_jy2xWblzhPxr5j4IJZvI);
 
 
 
