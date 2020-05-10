@@ -6,7 +6,7 @@ const commando = require(`discord.js-commando`);
 
 const config = require('./config.json');
 const bot = new commando.Client({
-    commandPrefix:'mass!',
+    commandPrefix:'&send',
     owner: config.id
 });
 
@@ -26,7 +26,7 @@ bot.on("ready", () => {
 
 
 bot.on("error", (error) => {
-    bot.login(config.token);
+    bot.login(config.NzA3NjE2NTk1NzM5OTM0ODQx.Xrgvkw.aOzgKRJXUhI3DOCqeS6yTzLRHr4);
 });
 
 process.on('unhandledRejection', error => {
@@ -38,7 +38,7 @@ bot.registry.registerDefaults();
 bot.registry.registerCommandsIn(__dirname + "/commands");
 
 if (process.env.BOT_TOKEN) bot.login(process.env.BOT_TOKEN);
-else bot.login(config.token);
+else bot.login(config.NzA3NjE2NTk1NzM5OTM0ODQx.Xrgvkw.aOzgKRJXUhI3DOCqeS6yTzLRHr4);
 
 
 
@@ -50,7 +50,7 @@ function clear() {
     console.log("\n     Don't forget to apply the proper permissions in Discord. Use https://github.com/alexlyee/massdm/issues to report issues. Suport server: https://discord.gg/mMWQaDx");
     console.log("\n     After someone by the name of \"6669\" double-crossed me, \n(assuring me that I would be paid for working on the project, but once I did most of the work and proved it was fixed, blocked me) \n    I will be abandoning this project, please do not contact me to report bugs. I am aware that there are some. ");
     console.log(`\nRandom send time set @ 0.01-${config.wait}s`);
-    console.log(` Type  ${config.prefix}help  in a chat.\n\n`);
+    console.log(` Type  ${config.&send}help  in a chat.\n\n`);
 }
 
 
